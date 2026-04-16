@@ -9,11 +9,21 @@ export default function Root() {
             </div>
 
             <nav className="relative z-10 w-full bg-black bg-opacity-80 border-b-2 border-white">
-                <ul className="flex items-center justify-between px-3 py-5 text-3xl">
+                <ul className="flex items-center justify-around px-3 py-5 text-3xl">
                     
                     <li>
                         <NavLink to='/' className="flex items-center gap-2 text-white">
                             jibaweb
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to='/projects'>
+                            projects
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to='/art'>
+                            art
                         </NavLink>
                     </li>
                 </ul>

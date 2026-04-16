@@ -7,3 +7,14 @@
     --default-font-family: var(--font-SyneMono);
 }
 
+body {
+  cursor: url('agrippa.png'), auto;
+}
+
+* {
+  cursor: inherit;
+}
+
+a, button, [role="button"] {
+  cursor: url('agrippa.png'), pointer;
+}
