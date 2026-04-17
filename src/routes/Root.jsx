@@ -4,11 +4,11 @@ import { NavLink, Outlet } from 'react-router'
 export default function Root() {
     return (
         <>
-        <div className="relative min-h-screen bg-black text-white">
+            
+        <div className="relative min-h-screen bg-gray-500 text-white">
             <div className="fixed inset-0 z-0">
             </div>
-
-            <nav className="relative z-10 w-full bg-black bg-opacity-80 border-b-2 border-white">
+            <nav className="relative z-10 w-full bg-sky-800 bg-opacity-80 border-b-2 border-white">
                 <ul className="flex items-center justify-around px-3 py-5 text-3xl">
                     
                     <li>
@@ -28,6 +28,7 @@ export default function Root() {
                     </li>
                 </ul>
             </nav>
+            
 
             <main className="relative z-10">
                 <Outlet />
