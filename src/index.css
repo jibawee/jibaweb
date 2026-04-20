@@ -9,6 +9,13 @@
 
 body {
   cursor: url('agrippa.png'), auto;
+  background-image:
+    url('/grass.gif'),
+    url('/clouds.jpg');
+  background-repeat: repeat-x, no-repeat;
+  background-position: bottom center, left top;
+  background-size: auto, cover;
+  background-attachment: fixed, fixed;
 }
 
 * {

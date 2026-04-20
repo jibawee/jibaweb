@@ -5,10 +5,10 @@ export default function Root() {
     return (
         <>
             
-        <div className="relative min-h-screen bg-gray-500 text-white">
+        <div className="relative min-h-screen text-white">
             <div className="fixed inset-0 z-0">
             </div>
-            <nav className="relative z-10 w-full bg-sky-800 bg-opacity-80 border-b-2 border-white">
+            <nav className="relative z-10 w-full border-b-2 border-white bg-[url('worm.jpg')] bg-cover bg-size-100%-20%">
                 <ul className="flex items-center justify-around px-3 py-5 text-3xl">
                     
                     <li>
