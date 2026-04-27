@@ -13,7 +13,7 @@ body {
     url('/grass.gif'),
     url('/clouds.jpg');
   background-repeat: repeat-x, no-repeat;
-  background-position: bottom center, left top;
+  background-position: bottom center, top center;
   background-size: auto, cover;
   background-attachment: fixed, fixed;
 }
