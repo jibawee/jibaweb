@@ -1,2 +1,2 @@
 # jibaweb
-My super awesome portfolio website
+My super awesome portfolio website built with vite, react, and tailwind. 
