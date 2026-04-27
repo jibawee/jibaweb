@@ -11,7 +11,7 @@ body {
   cursor: url('agrippa.png'), auto;
   background-image:
     url('/grass.gif'),
-    url('/clouds.jpg');
+    url('/tunnel.gif');
   background-repeat: repeat-x, no-repeat;
   background-position: bottom center, top center;
   background-size: auto, cover;
