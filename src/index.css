@@ -23,5 +23,5 @@ body {
 }
 
 a, button, [role="button"] {
-  cursor: url('/smi210.cur'), url('/agrippa.png'), pointer;
+  cursor: url('/agrippa.png'), pointer;
 }
