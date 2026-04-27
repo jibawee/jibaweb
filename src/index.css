@@ -7,3 +7,21 @@
     --default-font-family: var(--font-SyneMono);
 }
 
+body {
+  cursor: url('agrippa.png'), auto;
+  background-image:
+    url('/grass.gif'),
+    url('/tunnel.gif');
+  background-repeat: repeat-x, no-repeat;
+  background-position: bottom center, top center;
+  background-size: auto, cover;
+  background-attachment: fixed, fixed;
+}
+
+* {
+  cursor: inherit;
+}
+
+a, button, [role="button"] {
+  cursor: url('agrippa.png'), pointer;
+}

@@ -4,20 +4,31 @@ import { NavLink, Outlet } from 'react-router'
 export default function Root() {
     return (
         <>
-        <div className="relative min-h-screen bg-black text-white">
+            
+        <div className="relative min-h-screen text-white">
             <div className="fixed inset-0 z-0">
             </div>
-
-            <nav className="relative z-10 w-full bg-black bg-opacity-80 border-b-2 border-white">
-                <ul className="flex items-center justify-between px-3 py-5 text-3xl">
+            <nav className="relative z-10 w-full  bg-[url('teeth2.jpg')] bg-fill bg-bottom-right bg-size-100%-20%">
+                <ul className="flex items-center justify-around px-3 py-5 text-3xl text-black">
                     
                     <li>
-                        <NavLink to='/' className="flex items-center gap-2 text-white">
+                        <NavLink to='/' className="">
                             jibaweb
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to='/projects' className="">
+                            projects
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to='/art' className="">
+                            art
                         </NavLink>
                     </li>
                 </ul>
             </nav>
+            
 
             <main className="relative z-10">
                 <Outlet />

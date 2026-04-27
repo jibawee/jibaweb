@@ -5,6 +5,8 @@ import { RouterProvider } from 'react-router/dom'
 
 import Root from './routes/Root'
 import Home from './routes/Home'
+import Projects from './routes/Projects'
+import Art from './routes/Art'
 
 
 import './index.css'
@@ -17,19 +19,23 @@ const router = createBrowserRouter([
             { 
               index: true,
               Component: Home,
-            }]
-            // { 
-            //   path: "",
-            //   Component: ,
-            //   loader: Loader,
+            },
+            { 
+              path: "/projects",
+              Component: Projects            
+            },
+                        { 
+              path: "/art",
+              Component: Art            
+            }
             //   children: [
             //     {
             //       path: ":id",
             //       Component: 
             //     }
             //   ]
-            // },
-            
+
+        ]
 
     }
 ])
