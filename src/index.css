@@ -8,7 +8,7 @@
 }
 
 body {
-  cursor: url('agrippa.png'), auto;
+  cursor: url('/smi210.cur'), url('/agrippa.png'), auto;
   background-image:
     url('/grass.gif'),
     url('/tunnel.gif');
@@ -23,5 +23,5 @@ body {
 }
 
 a, button, [role="button"] {
-  cursor: url('agrippa.png'), pointer;
+  cursor: url('/smi210.cur'), url('/agrippa.png'), pointer;
 }
