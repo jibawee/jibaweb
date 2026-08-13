@@ -1,10 +1,15 @@
 
+import ProjectCard from '../components/ProjectCard';
+import { projectsList } from '../data/projects';
 
 export default function Projects() {
     return (
-    <div className="p-20 grid place-items-center">
-        <iframe width="570" height="325" src="https://www.youtube.com/embed/8pMB4m1nGk0?si=hha2f3_VtCY6JT7u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen className="mb-5"></iframe>
-        <p>more coming soon...</p>
+    <div className="p-30">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+            {projectsList.map(project => (
+                <ProjectCard key={project.id} project={project} />
+            ))}
+        </div>
     </div>
     )
 }

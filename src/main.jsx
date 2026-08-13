@@ -6,6 +6,7 @@ import { RouterProvider } from 'react-router/dom'
 import Root from './routes/Root'
 import Home from './routes/Home'
 import Projects from './routes/Projects'
+import ProjectDetail from './routes/ProjectDetail'
 import Art from './routes/Art'
 
 
@@ -24,16 +25,14 @@ const router = createBrowserRouter([
               path: "/projects",
               Component: Projects            
             },
-                        { 
+            { 
+              path: "/projects/:id",
+              Component: ProjectDetail            
+            },
+            { 
               path: "/art",
               Component: Art            
             }
-            //   children: [
-            //     {
-            //       path: ":id",
-            //       Component: 
-            //     }
-            //   ]
 
         ]
 
