@@ -5,7 +5,7 @@ export const projectsList = [
         description: "An immersive, fun VR experience teaching newcomers traditional Japanese swordsmanship.",
         fullDescription: "Detailed description for project three goes here.",
         link: "/projects/1",
-        images: ["optional image url"],
+        images: ["/vryulogo.png"],
         tools: ["Unreal Engine", "Perforce", "Blender"],
         links: [
             { label: "Website", url: "https://osu-vryu.github.io/" },
@@ -14,10 +14,10 @@ export const projectsList = [
     {
         id: 2,
         title: "I should be studying",
-        description: "A personal Blender project exploring character modeling, texturing, rigging, scene composition, lighting, and motion animation principles.",
+        description: "A PSX inspired Blender project exploring character modeling, texturing, rigging, scene composition, lighting, and motion animation principles.",
         fullDescription: "A short PSX style animation created to develop hands-on experience with character modeling, texturing, and rigging in Blender, with additional focus on scene composition, lighting, and atmosphere. The project also served as an introduction to core principles of motion animation.",
         link: "/projects/2",
-        images: ["/meat.jpg"],
+        images: ["/blenderss.jpg"],
         tools: ["Blender"],
         iframe: "https://www.youtube.com/embed/8pMB4m1nGk0?si=hha2f3_VtCY6JT7u"
     },
@@ -27,7 +27,7 @@ export const projectsList = [
         description: "A React + Vite web app that fetches NASA's API for NeoWs (Near Earth Object Web Service) and displays today’s closest asteroids, a 7-day forecast, asteroid detail pages, and a personal watchlist.",
         fullDescription: "Another detailed description for project two goes here.",
         link: "/projects/3",
-        images: ["optional image url"],
+        images: ["/asteroidsahoy.png"],
         tools: ["React", "Vite", "Tailwind", "Vercel"],
         links: [
             { label: "Live Site", url: "https://final-project-cs494-g21-tio-in-spac.vercel.app/" },
@@ -40,7 +40,7 @@ export const projectsList = [
         description: "Interactive visualizations using insights from Oregon fire casualty and housing condition data.",
         fullDescription: "Detailed description for project three goes here.",
         link: "/projects/4",
-        images: ["optional image url"],
+        images: ["/oregonfireviz.png"],
         tools: ["Rstudio", "Gephi"],
         links: [
             { label: "Live Page", url: "https://jibawee.github.io/OregonFireCasualtyVizDash/" },
@@ -53,7 +53,7 @@ export const projectsList = [
         description: "An Android app that allows users to explore movies, search for favorites, view trailers and streaming services, and keep a rated watchlist history.",
         fullDescription: "Detailed description for project three goes here.",
         link: "/projects/5",
-        images: ["optional image url"],
+        images: ["/appss1.png"],
         tools: ["Kotlin", "Android Studio"],
         links: [
             { label: "GitHub", url: "https://github.com/osu-cs492-w26/final-project-cs492-team23" }
