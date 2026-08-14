@@ -2,14 +2,20 @@ export default function Home() {
 
 
     return (
-        <div className="flex flex-wrap p-40 pt-20 gap-10 h-200">
-                <div className=" flex-2 min-w-80 flex-col border-2 border-green-400 bg-[url('/uni.jpg')] bg-cover bg-center p-10 text-black">
+        <div className="flex flex-wrap p-30 pt-42 gap-10 h-200">
+                <div className=" flex-1 min-w-80 flex-col border-2 border-green-400 bg-[url('/uni.jpg')] bg-cover bg-center p-10 text-black">
                     <p>WELCOME TO JIBAWEB WORLD</p>
                     <p>WE ARE CURRENTLY UNDERGOING RENNOVATIONS</p>
                 </div>
-                <div className="flex-1 min-w-80 flex-col border-2 border-green-400 bg-[url('/newport.gif')] bg-cover bg-center p-5 text-center">
-                    <p className="">gods strongest magical girl</p>
-                    <p>#opentowork</p>
+                <div className="flex-2 min-w-80 flex gap-1 border-2 border-green-400 bg-[url('/book.png')] bg-[size:100%_100%] bg-no-repeat w-full text-center text-black text-xs">
+                    <div className="flex-1 pl-15 pt-14">
+                        <p>Column one placeholder text</p>
+                        <p>More placeholder content here</p>
+                    </div>
+                    <div className="flex-1 pr-15 pt-14">
+                        <p>Column two placeholder text</p>
+                        <p>More placeholder content here</p>
+                    </div>
                 </div>
             
         </div>

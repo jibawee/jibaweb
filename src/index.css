@@ -9,14 +9,12 @@
 
 body {
   cursor: url('/agrippa.png'), auto;
-  background-image:
-    url('/grass.gif'),
-    url('/tunnel.gif');
-  background-repeat: repeat-x, no-repeat;
-  background-position: bottom center, top center;
-  background-size: auto, cover;
-  background-attachment: fixed, fixed;
-  z-index: 100, 0;
+  background-image: url('/background.png');
+  background-repeat:no-repeat;
+  background-position:bottom center;
+  background-size:100% auto;
+  background-attachment:fixed;
+  z-index:0;
 }
 
 * {
