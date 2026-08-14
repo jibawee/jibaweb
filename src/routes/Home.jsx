@@ -7,7 +7,7 @@ export default function Home() {
                     <p>WELCOME TO JIBAWEB WORLD</p>
                     <p>WE ARE CURRENTLY UNDERGOING RENNOVATIONS</p>
                 </div>
-                <div className="flex-2 min-w-150 max-w-175 min-h-100 flex gap-1 border-2 border-green-400 bg-[url('/book.png')] bg-[size:100%_100%] bg-no-repeat w-full text-center text-black text-xs">
+                <div className="flex-2 min-w-170 max-w-170 min-h-125 max-h-125 flex gap-1 border-2 border-green-400 bg-[url('/book.png')] bg-[size:100%_100%] bg-no-repeat w-full text-center text-black text-xs">
                     <div className="flex-1 pl-15 pt-14">
                         <p>Column one placeholder text</p>
                         <p>More placeholder content here</p>
