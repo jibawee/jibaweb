@@ -1,7 +1,21 @@
-import { useEffect } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 export default function Art(){
+    const [loaded, setLoaded] = useState(false);
+    const containerRef = useRef(null);
+
     useEffect(() => {
+        const observer = new MutationObserver(() => {
+            if (containerRef.current?.querySelector('iframe')) {
+                setLoaded(true);
+                observer.disconnect();
+            }
+        });
+
+        if (containerRef.current) {
+            observer.observe(containerRef.current, { childList: true, subtree: true });
+        }
+
         if (window.instgrm) {
             window.instgrm.Embeds.process();
         } else {
@@ -10,10 +24,17 @@ export default function Art(){
             script.src = '//www.instagram.com/embed.js';
             document.body.appendChild(script);
         }
+
+        return () => observer.disconnect();
     }, []);
 
     return (
-        <div className="p-30 grid place-items-center">
+        <div className="p-30 pt-40 grid place-items-center" ref={containerRef}>
+            {!loaded && (
+                <div className="flex items-center justify-center py-10">
+                    <div className="w-10 h-10 rounded-full border-4 border-pink-400 border-t-transparent animate-spin" />
+                </div>
+            )}
             <blockquote
                 className="instagram-media"
                 data-instgrm-permalink="https://www.instagram.com/jibaw33/?utm_source=ig_embed&utm_campaign=loading"

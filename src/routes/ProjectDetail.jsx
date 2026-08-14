@@ -1,9 +1,11 @@
 import { useParams, Link } from 'react-router';
+import { useState } from 'react';
 import { getProjectById } from '../data/projects';
 
 export default function ProjectDetail() {
   const { id } = useParams();
   const project = getProjectById(id);
+  const [iframeLoaded, setIframeLoaded] = useState(false);
 
   if (!project) {
     return (
@@ -38,17 +40,23 @@ export default function ProjectDetail() {
         </div>
       )}
       {project.iframe && (
-        <div className="mb-8 flex justify-center">
-          <iframe 
-            width="570" 
-            height="325" 
-            src={project.iframe} 
+        <div className="mb-8 flex justify-center relative">
+          {!iframeLoaded && (
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-10 h-10 rounded-full border-4 border-pink-400 border-t-transparent animate-spin" />
+            </div>
+          )}
+          <iframe
+            width="570"
+            height="325"
+            src={project.iframe}
             title={project.title}
-            frameBorder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerPolicy="strict-origin-when-cross-origin" 
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
             className="rounded"
+            onLoad={() => setIframeLoaded(true)}
           />
         </div>
       )}

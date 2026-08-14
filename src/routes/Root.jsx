@@ -8,7 +8,7 @@ export default function Root() {
         <div className="relative min-h-screen text-white">
             <div className="inset-0">
             </div>
-            <nav className="fixed z-50 w-full bg-[url('/nav.png')] bg-no-repeat bg-cover h-full">
+            <nav className="fixed z-50 w-full bg-[url('/nav.png')] bg-no-repeat bg-cover h-50">
                 <ul className="flex items-center justify-around p-6 text-3xl text-amber-50">
                     
                     <li>
